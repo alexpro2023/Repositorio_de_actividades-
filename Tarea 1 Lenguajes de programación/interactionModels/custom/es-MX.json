@@ -1,0 +1,43 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "curiosidades de programación",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CustomLanguageIntent",
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "que tal {language}",
+            "qué sabes de {language}",
+            "dime algo sobre {language}",
+            "prueba {language}",
+            "dime una curiosidad sobre {language}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "3"
+}
