@@ -1,0 +1,96 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "basic calculator",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "calcular",
+          "slots": [
+            {
+              "name": "operacion",
+              "type": "operacion"
+            },
+            {
+              "name": "primer_numero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "segundo_numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{operacion} {primer_numero} between {segundo_numero}",
+            "{operacion} {primer_numero} less {segundo_numero}",
+            "{operacion} {primer_numero} by {segundo_numero}",
+            "{operacion} {primer_numero} further {segundo_numero}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "split"
+              }
+            },
+            {
+              "name": {
+                "value": "subtract"
+              }
+            },
+            {
+              "name": {
+                "value": "Add"
+              }
+            },
+            {
+              "name": {
+                "value": "multiply"
+              }
+            },
+            {
+              "name": {
+                "value": "sumar"
+              }
+            },
+            {
+              "name": {
+                "value": "restar"
+              }
+            },
+            {
+              "name": {
+                "value": "dividir"
+              }
+            },
+            {
+              "name": {
+                "value": "multiplicar"
+              }
+            }
+          ],
+          "name": "operacion"
+        }
+      ]
+    }
+  },
+  "version": "7"
+}
