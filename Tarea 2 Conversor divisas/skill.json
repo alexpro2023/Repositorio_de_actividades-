@@ -1,0 +1,85 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "convertir en 100 pesos a euros",
+          "examplePhrases": [
+            "Alexa,convertidor de divisas"
+          ],
+          "keywords": [
+            "convertir",
+            "conversion",
+            "transformar"
+          ],
+          "name": "Convertidor de divisas",
+          "description": "convertir en 300 dolares a peso mexicano",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        },
+        "es-MX": {
+          "summary": "convertir en 100 pesos a euros",
+          "examplePhrases": [
+            "abre,convertidor de divisas",
+            "convertir en 100 pesos a euros",
+            "ayuda"
+          ],
+          "keywords": [
+            "convertir",
+            "conversion",
+            "transformar"
+          ],
+          "name": "Convertidor de divisas",
+          "description": "convertir en 100 pesos a dolar",
+          "smallIconUri": "file://assets/images/es-MX_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-MX_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "{\"ask_dist_username\":\"Alejandro Hernandez Hernandez\",\"ask_dist_password\":\"Huejutla2020@\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "CURRENCY_GUIDES_AND_CONVERTERS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "MX"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:186443532232:function:eafb973c-8546-4945-9d68-388283a108a3:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:186443532232:function:eafb973c-8546-4945-9d68-388283a108a3:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:186443532232:function:eafb973c-8546-4945-9d68-388283a108a3:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:186443532232:function:eafb973c-8546-4945-9d68-388283a108a3:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {},
+        "es-MX": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

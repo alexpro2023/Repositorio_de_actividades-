@@ -1,0 +1,294 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "currency converter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "how to use this skill",
+            "what is this skill",
+            "how the skills works",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "close money converter",
+            "see you later",
+            "bye",
+            "close skill",
+            "close"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CustomConversorIntent",
+          "slots": [
+            {
+              "name": "cantPesosDolar",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantPesosDolar}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantPesosDolar} pesos to dollars"
+          ]
+        },
+        {
+          "name": "IntentDolarPesos",
+          "slots": [
+            {
+              "name": "cantDolarPesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantDolarPesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantDolarPesos} dollars to pesos"
+          ]
+        },
+        {
+          "name": "IntentEuroPesos",
+          "slots": [
+            {
+              "name": "cantEuroPesos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantEuroPesos}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantEuroPesos} euros to pesos"
+          ]
+        },
+        {
+          "name": "IntentPesosEuro",
+          "slots": [
+            {
+              "name": "cantPesosEuro",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantPesosEuro}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantPesosEuro} pesos to euros"
+          ]
+        },
+        {
+          "name": "IntentDolarEuro",
+          "slots": [
+            {
+              "name": "cantDolarEuro",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantDolarEuro}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantDolarEuro} dollars to euros"
+          ]
+        },
+        {
+          "name": "IntentEuroDolar",
+          "slots": [
+            {
+              "name": "cantEuroDolar",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cantEuroDolar}"
+              ]
+            }
+          ],
+          "samples": [
+            "transform {cantEuroDolar} euros to dollars"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CustomConversorIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantPesosDolar",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.729459594634.1243161846898"
+              }
+            }
+          ]
+        },
+        {
+          "name": "IntentDolarPesos",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantDolarPesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.250091183637.382581107217"
+              }
+            }
+          ]
+        },
+        {
+          "name": "IntentEuroPesos",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantEuroPesos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.721893343953.1277299408839"
+              }
+            }
+          ]
+        },
+        {
+          "name": "IntentPesosEuro",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantPesosEuro",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.346000196805.828996184721"
+              }
+            }
+          ]
+        },
+        {
+          "name": "IntentDolarEuro",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantDolarEuro",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1346044882736.41186135496"
+              }
+            }
+          ]
+        },
+        {
+          "name": "IntentEuroDolar",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cantEuroDolar",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.431008748540.695172638420"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1170706368641.439900911094",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No cuento con informacion"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.721893343953.1277299408839",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.346000196805.828996184721",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1346044882736.41186135496",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.431008748540.695172638420",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.729459594634.1243161846898",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.250091183637.382581107217",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Only numeric values are allowed, please try again"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "17"
+}
